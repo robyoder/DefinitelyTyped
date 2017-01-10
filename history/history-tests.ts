@@ -94,6 +94,7 @@ let input = { value: "" };
     let history = useQueries(createHistory)()
 
     history.listen(function(location) {
+        let param: string = location.query['test'];
         console.log(location.query)
     })
 }

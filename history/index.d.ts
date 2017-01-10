@@ -78,7 +78,7 @@ export namespace History {
     export type LocationState = Object;
     export type Path = string // Pathname + QueryString;
     export type Pathname = string;
-    export type Query = Object;
+    export type Query = { [key: string]: string };
     export type QueryString = string;
     export type Search = string;
     export type TransitionHook = (location: Location, callback: (result: any) => void) => any
